@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+        <script>
+            var add;
+            var sub;
+            function reuseCode(){
+                add =parseInt(document.getElementById('first').value);
+                sub = parseInt(document.getElementById('sec').value);
+            }
+            function addFun(){
+                reuseCode();
+                var addi = add + sub;
+                document.getElementById("ans").innerHTML=addi;
+            }
+            function subFun(){
+                reuseCode();
+                var addi = add - sub;
+                document.getElementById("ans").innerHTML=addi;
+            }
+            function multiFun(){
+                reuseCode();
+                var addi = add * sub;
+                document.getElementById("ans").innerHTML=addi;
+            }
+            function diviFun(){
+                reuseCode();
+                var addi = add / sub;
+                document.getElementById("ans").innerHTML=addi;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>value 1:</label>
+            <input type="text" id="first"><br>
+
+            <label>value 2:</label>
+            <input type="text" id="sec"><br>
+
+            <p id="ans"></p>
+
+            <button type="button" onclick="addFun()">Add</button><br>
+            <button type="button" onclick="subFun()">subtract</button><br>
+            <button type="button" onclick="multiFun()">multiply</button><br>
+            <button type="button" onclick="diviFun()">divide</button><br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array of object</title>
+</head>
+
+<body>
+        <!--sort array of objects by property value -->
+    <p id="output"></p>
+    <script>
+        let users = [{ name: 'a', score: 20 },
+        { name: 'b', score: 10 },
+        { name: 'c', score: 30 }];
+
+        // function userFun(x,y){
+        //     return x.score - y.score;
+        // };
+
+        // users.sort(userFun);
+        users.sort((a,b)=>{
+            return a.score - b.score;
+        });
+        document.getElementById("output").innerHTML=JSON.stringify(users);
+
+    </script>
+</body>
+
+</html>

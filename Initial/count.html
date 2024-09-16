@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var count=0;
+        
+        function myFun(){
+            count++;
+            document.getElementById("output").innerHTML="Number of times:"+count;
+            if(count==10){
+                alert("10 times");
+                count=0;
+            }
+        };
+    </script>
+</head>
+<body>
+    
+    <button id="btn" onclick="myFun()">click</button>
+    <p id="output"></p>
+</body>
+</html>
